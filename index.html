@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icono.png">
+    <title>Liga de Quito | TIenda Virtual</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">LDU</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="./images/menu.png" class="menu-icono"  alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#lista-1">Shop</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/piovi.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Nuevos Productos</h1>
+                <p>de liga soy</p>
+                <a href="#lista-1" class="btn-1">Comprar ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 3</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/aniversario.png" alt="">
+                <div class="product-txt">
+                    <h3>LDU Aniversario 2024</h3>
+                    <p>Camiseta Fútbol Hombre</p>
+                    <p class="precio">$51.99</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/alterna2.png" alt="">
+                <div class="product-txt">
+                    <h3>LDU Segunda Equipación</h3>
+                    <p>Camiseta Fútbol Hombre</p>
+                    <p class="precio">$50.24</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/arquero1.png" alt="">
+                <div class="product-txt">
+                    <h3>LDU Arquero 2024</h3>
+                    <p>Camiseta Fútbol Hombre</p>
+                    <p class="precio">$50.24</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/arquero2.png" alt="">
+                <div class="product-txt">
+                    <h3>LDU Arquero 2024</h3>
+                    <p>Camiseta Fútbol Hombre</p>
+                    <p class="precio">$50.24</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/arquero3.png" alt="">
+                <div class="product-txt">
+                    <h3>LDU Arquero 2024</h3>
+                    <p>Camiseta Fútbol Hombre</p>
+                    <p class="precio">$50.24</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/buzo_entrenamiento.png" alt="">
+                <div class="product-txt">
+                    <h3>Buzo de entrenamiento</h3>
+                    <p>Buzo Fútbol Hombre</p>
+                    <p class="precio">$48.93</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="images/b1.jpg" alt="">
+            <h3>Blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi magnam laboriosam consequuntur, iusto deleniti soluta corrupti dolores dolorem quia sit expedita ex eius molestias reiciendis error necessitatibus placeat. Dolorum.</p>
+        </div>
+        <div class="blog-1">
+            <img src="images/b2.jpg" alt="">
+            <h3>Blog 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi magnam laboriosam consequuntur, iusto deleniti soluta corrupti dolores dolorem quia sit expedita ex eius molestias reiciendis error necessitatibus placeat. Dolorum.</p>
+        </div>
+        <div class="blog-1">
+            <img src="images/b3.jpg" alt="">
+            <h3>Blog 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi magnam laboriosam consequuntur, iusto deleniti soluta corrupti dolores dolorem quia sit expedita ex eius molestias reiciendis error necessitatibus placeat. Dolorum.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content conteiner">
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+</html>
