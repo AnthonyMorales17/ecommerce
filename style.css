@@ -26,7 +26,7 @@ img {
     margin: 0 auto;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     min-height: 80vh;
@@ -71,7 +71,7 @@ header {
     width: 25px;
 }
 
-.menu label {
+.menu label .menu-icono {
     cursor: pointer;
     display: none;
 }
@@ -330,13 +330,14 @@ th, td {
     margin-bottom: 10px;
 }
 
+
 @media (max-width:991px){
         
     .menu {
         padding: 20px;
     }
 
-    .menu label {
+    .menu label .menu-icono {
         display: initial;
     }
 

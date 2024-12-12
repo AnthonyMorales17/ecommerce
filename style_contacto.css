@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #F5F5F5;
+    padding: 70px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label .menu-icono {
+    cursor: pointer;
+    display: none;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #F5F5F5;
+    padding: 30px 0;
+}
+
+.header-txt h4 {
+    color: #6B6E71;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 10px;
+    text-align: justify;
+}
+
+form {
+    padding: 40px 0;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+    height: 350px;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.contact input {
+    background: none;
+    color: #c6c6c6;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #181818;
+}
+
+input:focus {
+    outline: none;
+    color: #5e5e5e;
+}
+
+.contact .form label {
+    position: absolute;
+    top: 0;
+    color: #535353;
+    left: 5px;
+    top: -10px;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.contact input:focus ~ label, 
+.contact input:valid ~ label {
+    top: -20px;
+    color: red;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+input:focus~.barra::before {
+    width: 20%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease width;
+    left: 0;
+    background: #535353;
+}
+
+.ofert {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color:#F5F5F5;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.footer {
+    padding: 50px 40px;
+    background-color: #111111;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #DCDCDC;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width:991px){
+        
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label .menu-icono {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #FFFFFF;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header-txt {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 70px;
+    }
+
+    .ofert {
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+
+    .products h2 {
+        margin-bottom: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product img {
+        width: 220px;
+        height: 270px;
+    }
+
+    .icons {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .icon-1 {
+        margin-bottom: 30px;
+    }
+
+    .blog {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
